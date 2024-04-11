@@ -13,12 +13,7 @@ connectDB();
 const app = express();
 
 app.use(express.json()); // to accept json data
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-  }),
-);
+app.use(cors());
 
 // app.get("/", (req, res) => {
 //   res.send("API Running!");
