@@ -188,7 +188,7 @@ const MyChats = ({ fetchAgain }) => {
                       name={chat.groupAdmin.name}
                       src={chat.groupAdmin.pic}
                     />
-                    {chats.map((user) =>
+                    {chat.users.map((user) =>
                       chat.groupAdmin._id === user._id ? null : (
                         <Avatar
                           key={user._id}

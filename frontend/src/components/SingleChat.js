@@ -264,7 +264,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                     size="lg"
                     aria-label="Send"
                     icon={<SendIcon />}
-                    onSubmit={onSubmit}
+                    onClick={onSubmit}
                   />
                 </InputRightElement>
               </InputGroup>
